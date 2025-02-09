@@ -1,0 +1,50 @@
+/* General navbar styles */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #afff4d !important; /* Custom yellow color for branding */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add logo through CSS */
+.navbar-logo {
+  background: url('../components/images/beessoftnew.webp') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  width: 150px; /* Adjust logo width */
+  height: 80px; /* Adjust logo height */
+}
+
+/* Active link styles */
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #afff4d !important; /* Highlight on hover */
+}
+
+.active-link {
+  color: #afff4d !important;
+  font-weight: bold;
+  border-bottom: 2px solid #afff4d !important; /* Yellow underline for active links */
+}
+
+/* Navbar responsiveness */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  /* background-image: url('../components/images/toggler-icon.svg'); Path to your toggler icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px; /* Adjust size */
+  height: 30px;
+}

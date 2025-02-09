@@ -1,0 +1,126 @@
+/* Services.css */
+
+.services-container {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+  
+.services-hero {
+    background: radial-gradient(circle at var(--x) var(--y), rgba(0, 255, 170, 0.2) 10%, #121a24 50%);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.1s ease-out;
+}
+
+/* Animates background color movement */
+.services-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(0, 255, 170, 0.4) 5%, transparent 50%);
+    transition: background 0.1s ease-out;
+    pointer-events: none;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+  
+.services-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+  
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+  
+.service-card {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-color: #003366;
+}
+  
+.service-card h3 {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+  
+.service-card p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.services-hero {
+    cursor: none;
+}
+
+.services-hero::after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(0, 255, 170, 0.3);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.services-hero:hover::after {
+    background: rgba(0, 255, 170, 0.5);
+}
+
+.services-hero:hover {
+    background: #002244;
+}
+
+.services-hero:hover .services-title, .services-hero:hover .services-subtitle {
+    color: #f8f9fa;
+}
+
+.services-hero {
+    position: relative;
+}
+
+.services-hero:hover::after {
+    animation: cursorAnimation 0.2s ease-in-out;
+}
+
+@keyframes cursorAnimation {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

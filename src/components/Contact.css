@@ -1,0 +1,149 @@
+/* Contact Page Styles */
+.contact-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #212123, #151822);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.contact-title {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Description */
+.contact-description {
+  font-size: 1.2rem;
+  color: #b0c4de;
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: bold;
+  color: #00ff99;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #00d4ff;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glowing Effect on Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00ff99;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+}
+
+/* Submit Button */
+.submit-button {
+  background: linear-gradient(135deg, #00d4ff, #00ff99);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
+}
+
+/* Button Hover */
+.submit-button:hover {
+  background: linear-gradient(135deg, #00ff99, #00d4ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #00ff99;
+}
+
+/* Contact Details Section */
+.contact-details {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+}
+
+/* Contact Details Title */
+.contact-details h2 {
+  font-size: 2rem;
+  color: #00ff99;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* Contact Details Text */
+.contact-details p {
+  font-size: 1.1rem;
+  color: #b0c4de;
+}
+
+/* Contact Links */
+.contact-details a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-details a:hover {
+  color: #00ff99;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+      width: 90%;
+      padding: 1.5rem;
+  }
+
+  .contact-title {
+      font-size: 2rem;
+  }
+
+  .contact-details {
+      padding: 1.5rem;
+  }
+}

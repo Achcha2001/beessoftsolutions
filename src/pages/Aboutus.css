@@ -1,0 +1,211 @@
+/* About Us Page Styles */
+.aboutus-container1 {
+    max-width: 100%;
+    margin: 0;
+    padding: 4rem 2rem; /* Increased padding for better spacing */
+    background: linear-gradient(135deg, #242428, #07101a);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Techy Background for Title */
+.aboutus-header {
+    position: relative;
+    background: url('../components/images/tech-bg.webp') no-repeat center center/cover;
+    padding: 6rem 2rem; /* Increased padding */
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Dark Overlay Effect */
+.aboutus-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    border-radius: 12px;
+}
+
+/* Ensure Text Stays Above Overlay */
+.aboutus-header h1, 
+.aboutus-header p {
+    position: relative;
+    z-index: 2;
+}
+
+
+.aboutus-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #00d4ff, #00ff99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutus-description {
+    font-size: 1.3rem;
+    color: #ddd;
+    line-height: 1.8; /* Increased line height */
+    margin-bottom: 3rem;
+}
+
+/* Vision & Mission Boxes */
+.aboutus-vision-mission {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Increased spacing between boxes */
+    margin-top: 3rem;
+    padding: 3rem 2rem; /* Added padding */
+    background: linear-gradient(135deg, #252b42, #1c1e26);
+    border-radius: 12px;
+}
+
+.aboutus-vision, .aboutus-mission {
+    background: rgba(0, 212, 255, 0.2);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+    font-size: 1.3rem;
+    color: #00d4ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-vision:hover, .aboutus-mission:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Founder Section */
+.aboutus-founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: linear-gradient(135deg, #272728, #393939, #24243e);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+}
+
+.aboutus-founder-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-image: url('../components/images/founder.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 153, 0.3);
+    border: 3px solid #00ff99;
+}
+
+.aboutus-founder-details {
+    text-align: left;
+    max-width: 550px;
+}
+
+.aboutus-founder-details h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d4ff;
+    margin-bottom: 1rem;
+}
+
+.aboutus-founder-details p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.8;
+}
+.aboutus-section-title1{
+    font-size: 30px;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+/* Values List */
+.aboutus-values-section {
+    padding: 3rem 2rem;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #16213e, #1b1b2f);
+    border-radius: 12px;
+}
+
+.aboutus-values-list {
+    list-style: none;
+    
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.aboutus-values-list li {
+    background: rgba(0, 255, 153, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 255, 153, 0.4);
+    font-size: 1.2rem;
+    color: #00ff99;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 260px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutus-values-list li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 255, 153, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .aboutus-vision-mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus-vision, .aboutus-mission {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus-founder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutus-founder-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .aboutus-founder-details {
+        text-align: center;
+    }
+
+    .aboutus-values-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
