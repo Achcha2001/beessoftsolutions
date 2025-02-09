@@ -27,7 +27,7 @@ function AboutUs() {
       <div className="aboutus-founder">
   <div className="aboutus-founder-image"></div>
   <div className="aboutus-founder-details">
-    <h3>Saman Weerasuriya</h3> <p>Saman Weerasuriya is a seasoned leader in technology and sports management. As Senior Manager of Network & Infrastructure at Crystal Martin Ceylon (Pvt) Ltd., he drives technological advancements. He also serves as **Senior Vice President of the Mercantile Volleyball Association (MVA) of Sri Lanka, promoting the sport and organizing major tournaments. His leadership in both fields has significantly impacted corporate innovation and athletic development, fostering growth and opportunities within Sri Lanka’s business and sports sectors.</p>
+    <h3>Saman Weerasuriya</h3> <p>Saman Weerasuriya is a seasoned leader in technology and sports management. As Senior Manager of Network & Infrastructure at Crystal Martin Ceylon (Pvt) Ltd., he drives technological advancements. He also serves as the President of the Mercantile Volleyball Association (MVA) of Sri Lanka, promoting the sport and organizing major tournaments. His leadership in both fields has significantly impacted corporate innovation and athletic development, fostering growth and opportunities within Sri Lanka’s business and sports sectors.</p>
   </div>
 </div>
 
